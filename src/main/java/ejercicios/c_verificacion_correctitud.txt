@@ -1,0 +1,12 @@
+Para comparar los resultados obtenidos con GraphFrames y JanusGraph, se pueden utilizar diferentes criterios:
+
+Verificar si cada par de queries devuelve la misma cantidad de filas.
+
+Realizar una comparación uno a uno con un script, teniendo en cuenta el formato de salida de cada query
+
+Quitar o modificar ciertas condiciones de las queries y comparar si los resultados son los mismos.
+Por ejemplo, en el ejercicio b1, se podría cambiar el aeropuerto de destino 'SEA' por otro aeropuerto
+y comparar los resultados obtenidos.
+También, se podría quitar la condición de que los aeropuertos tengan latitud y longitud.
+En el ejercicio b2, se podría limitar la cantidad de continentes y así comparar si los resultados son los mismos.
+

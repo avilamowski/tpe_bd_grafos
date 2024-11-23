@@ -1,0 +1,23 @@
+graph.traversal().V()
+    .hasLabel('continent').as('continent')
+    .out('contains').hasLabel('airport').as('airport')
+    .in('contains').hasLabel('country').as('country')
+    .select('continent', 'country')
+        .by(values('code'))
+        .by(values('desc'))
+    .group()
+        .by(select('continent', 'country'))
+        .by(select('airport').values('elev').order().fold())
+    .unfold()
+    .order()
+        .by(keys, Order.asc)
+    .map { 
+        it.get().key['continent'] + " " + 
+        it.get().key['country'] + " " + 
+        it.get().value 
+    }
+    .count()
+
+graph.traversal().V().hasLabel('continent').as('continent').out('contains').hasLabel('airport').as('airport').in('contains').hasLabel('country').as('country').select('continent', 'country').by(values('code')).by(values('desc')).group().by(select('continent', 'country')).by(select('airport').values('elev').order().fold()).unfold().order().by(keys, Order.asc).map { it.get().key['continent'] + " " + it.get().key['country'] + " " + it.get().value }.count()
+
+
