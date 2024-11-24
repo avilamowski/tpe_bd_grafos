@@ -2,22 +2,25 @@ graph.traversal().V()
     .hasLabel('continent').as('continent')
     .out('contains').hasLabel('airport').as('airport')
     .in('contains').hasLabel('country').as('country')
-    .select('continent', 'country')
-        .by(values('code'))
-        .by(values('desc'))
     .group()
-        .by(select('continent', 'country'))
+        .by(project('continent', 'country')
+            .by(select('continent').values('desc'))
+            .by(select('country').valueMap('code', 'desc')))
         .by(select('airport').values('elev').order().fold())
     .unfold()
     .order()
         .by(keys, Order.asc)
-    .map { 
-        it.get().key['continent'] + " " + 
-        it.get().key['country'] + " " + 
-        it.get().value 
+    .map {
+        def key = it.get().key
+        def continentDesc = key['continent']
+        def countryCode = key['country']['code'][0] // `valueMap` returns lists
+        def countryDesc = key['country']['desc'][0]
+        def elevations = it.get().value
+        return continentDesc + " " + countryCode + " (" + countryDesc + ") " + elevations
     }
-    .count()
 
-graph.traversal().V().hasLabel('continent').as('continent').out('contains').hasLabel('airport').as('airport').in('contains').hasLabel('country').as('country').select('continent', 'country').by(values('code')).by(values('desc')).group().by(select('continent', 'country')).by(select('airport').values('elev').order().fold()).unfold().order().by(keys, Order.asc).map { it.get().key['continent'] + " " + it.get().key['country'] + " " + it.get().value }.count()
+graph.traversal().V().hasLabel('continent').as('continent').out('contains').hasLabel('airport').as('airport').in('contains').hasLabel('country').as('country').group().by(project('continent', 'country').by(select('continent').values('desc')).by(select('country').valueMap('code', 'desc'))).by(select('airport').values('elev').order().fold()).unfold().order().by(keys, Order.asc).map { def key = it.get().key; def continentDesc = key['continent']; def countryCode = key['country']['code'][0]; def countryDesc = key['country']['desc'][0]; def elevations = it.get().value; continentDesc + " " + countryCode + " (" + countryDesc + ") " + elevations }
+
+
 
 
