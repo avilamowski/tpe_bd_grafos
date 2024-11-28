@@ -1,0 +1,530 @@
+<graphml xmlns='http://graphml.graphdrawing.org/xmlns'>
+  <key id='type' for='node' attr.name='type' attr.type='string'></key>
+  <key id='code' for='node' attr.name='code' attr.type='string'></key>
+  <key id='icao' for='node' attr.name='icao' attr.type='string'></key>
+  <key id='desc' for='node' attr.name='desc' attr.type='string'></key>
+  <key id='region' for='node' attr.name='region' attr.type='string'></key>
+  <key id='runways' for='node' attr.name='runways' attr.type='int'></key>
+  <key id='longest' for='node' attr.name='longest' attr.type='int'></key>
+  <key id='elev' for='node' attr.name='elev' attr.type='int'></key>
+  <key id='country' for='node' attr.name='country' attr.type='string'></key>
+  <key id='city' for='node' attr.name='city' attr.type='string'></key>
+  <key id='lat' for='node' attr.name='lat' attr.type='double'></key>
+  <key id='lon' for='node' attr.name='lon' attr.type='double'></key>
+  <key id='author' for='node' attr.name='author' attr.type='string'></key>
+  <key id='date' for='node' attr.name='date' attr.type='string'></key>
+  <key id='dist' for='edge' attr.name='dist' attr.type='int'></key>
+  <key id='labelV' for='node' attr.name='labelV' attr.type='string'></key>
+  <key id='labelE' for='edge' attr.name='labelE' attr.type='string'></key>
+
+  <graph id='routes' edgedefault='directed'>
+    <node id='3737'>
+      <data key='type'>continent</data>
+      <data key='code'>NA</data>
+      <data key='desc'>North America</data>
+      <data key='labelV'>continent</data>
+    </node>
+
+    <node id='3738'>
+      <data key='type'>continent</data>
+      <data key='code'>SA</data>
+      <data key='desc'>South America</data>
+      <data key='labelV'>continent</data>
+    </node>
+
+    <node id='3735'>
+      <data key='type'>continent</data>
+      <data key='code'>EU</data>
+      <data key='desc'>Europe</data>
+      <data key='labelV'>continent</data>
+    </node>
+
+    <node id='3739'>
+      <data key='type'>continent</data>
+      <data key='code'>AS</data>
+      <data key='desc'>Asia</data>
+      <data key='labelV'>continent</data>
+    </node>
+
+    <node id='3691'>
+      <data key='type'>country</data>
+      <data key='code'>SG</data>
+      <data key='desc'>Singapore</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='3723'>
+      <data key='type'>country</data>
+      <data key='code'>US</data>
+      <data key='desc'>United States</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='3560'>
+      <data key='type'>country</data>
+      <data key='code'>DE</data>
+      <data key='desc'>Germany</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='3721'>
+      <data key='type'>country</data>
+      <data key='code'>UK</data>
+      <data key='desc'>United Kingdom</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='3526'>
+      <data key='type'>country</data>
+      <data key='code'>BR</data>
+      <data key='desc'>Brazil</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='3648'>
+      <data key='type'>country</data>
+      <data key='code'>NL</data>
+      <data key='desc'>Netherlands</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='588'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>REC</data>
+      <data key='icao'>SBRF</data>
+      <data key='city'>Recife</data>
+      <data key='desc'>Guararapes - Gilberto Freyre International Airport</data>
+      <data key='region'>BR-PE</data>
+      <data key='runways'>1</data>
+      <data key='longest'>9865</data>
+      <data key='elev'>33</data>
+      <data key='country'>BR</data>
+      <data key='lat'>-8.12648963928223</data>
+      <data key='lon'>-34.9235992431641</data>
+    </node>
+
+    <node id='52'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>FRA</data>
+      <data key='icao'>EDDF</data>
+      <data key='city'>Frankfurt</data>
+      <data key='desc'>Frankfurt am Main</data>
+      <data key='region'>DE-HE</data>
+      <data key='runways'>4</data>
+      <data key='longest'>13123</data>
+      <data key='elev'>364</data>
+      <data key='country'>DE</data>
+      <data key='lat'>50.0264015198</data>
+      <data key='lon'>8.54312992096</data>
+    </node>
+
+    <node id='49'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>LHR</data>
+      <data key='icao'>EGLL</data>
+      <data key='city'>London</data>
+      <data key='desc'>London Heathrow</data>
+      <data key='region'>GB-ENG</data>
+      <data key='runways'>2</data>
+      <data key='longest'>12799</data>
+      <data key='elev'>83</data>
+      <data key='country'>UK</data>
+      <data key='lat'>51.4706001282</data>
+      <data key='lon'>-0.461941003799</data>
+    </node>
+
+    <node id='22'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>SEA</data>
+      <data key='icao'>KSEA</data>
+      <data key='city'>Seattle</data>
+      <data key='desc'>Seattle-Tacoma</data>
+      <data key='region'>US-WA</data>
+      <data key='runways'>3</data>
+      <data key='longest'>11901</data>
+      <data key='elev'>432</data>
+      <data key='country'>US</data>
+      <data key='lat'>47.4490013122559</data>
+      <data key='lon'>-122.30899810791</data>
+    </node>
+
+    <node id='16'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>MIA</data>
+      <data key='icao'>KMIA</data>
+      <data key='city'>Miami</data>
+      <data key='desc'>Miami International Airport</data>
+      <data key='region'>US-FL</data>
+      <data key='runways'>4</data>
+      <data key='longest'>13016</data>
+      <data key='elev'>8</data>
+      <data key='country'>US</data>
+      <data key='lat'>25.7931995391846</data>
+      <data key='lon'>-80.2906036376953</data>
+    </node>
+
+    <node id='132'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>GRU</data>
+      <data key='icao'>SBGR</data>
+      <data key='city'>Sao Paulo</data>
+      <data key='desc'>Sao Paulo, Guarulhos - Governador Andras Franco Montoro International Airport</data>
+      <data key='region'>BR-SP</data>
+      <data key='runways'>1</data>
+      <data key='longest'>12139</data>
+      <data key='elev'>2459</data>
+      <data key='country'>BR</data>
+      <data key='lat'>-23.4355564117432</data>
+      <data key='lon'>-46.4730567932129</data>
+    </node>
+
+
+
+    <node id='589'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>SSA</data>
+      <data key='icao'>SBSV</data>
+      <data key='city'>Salvador</data>
+      <data key='desc'>Deputado Luiz Eduardo Magalhães International Airport</data>
+      <data key='region'>BR-BA</data>
+      <data key='runways'>2</data>
+      <data key='longest'>9859</data>
+      <data key='elev'>64</data>
+      <data key='country'>BR</data>
+      <data key='lat'>-12.9086112976</data>
+      <data key='lon'>-38.3224983215</data>
+    </node>
+
+    <node id='70'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>AMS</data>
+      <data key='icao'>EHAM</data>
+      <data key='city'>Amsterdam</data>
+      <data key='desc'>Amsterdam Airport Schiphol</data>
+      <data key='region'>NL-NH</data>
+      <data key='runways'>6</data>
+      <data key='longest'>12467</data>
+      <data key='elev'>-11</data>
+      <data key='country'>NL</data>
+      <data key='lat'>52.3086013794</data>
+      <data key='lon'>4.76388978958</data>
+    </node>
+
+    <node id='13'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>LAX</data>
+      <data key='icao'>KLAX</data>
+      <data key='city'>Los Angeles</data>
+      <data key='desc'>Los Angeles International Airport</data>
+      <data key='region'>US-CA</data>
+      <data key='runways'>4</data>
+      <data key='longest'>12091</data>
+      <data key='elev'>127</data>
+      <data key='country'>US</data>
+      <data key='lat'>33.94250107</data>
+      <data key='lon'>-118.4079971</data>
+    </node>
+
+    <node id='56'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>SIN</data>
+      <data key='icao'>WSSS</data>
+      <data key='city'>Singapore</data>
+      <data key='desc'>Singapore, Changi International Airport</data>
+      <data key='region'>SG</data>
+      <data key='runways'>3</data>
+      <data key='longest'>13123</data>
+      <data key='elev'>22</data>
+      <data key='country'>SG</data>
+      <data key='lat'>1.3501900434494</data>
+      <data key='lon'>103.994003295898</data>
+    </node>
+
+
+
+    <!-- North America - SEA -->
+    <edge id='57840' source='3737' target='22'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - SEA -->
+    <edge id='54343' source='3723' target='22'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - MIA -->
+    <edge id='57834' source='3737' target='16'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - MIA -->
+    <edge id='54337' source='3723' target='16'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - LAX -->
+    <edge id='57831' source='3737' target='13'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - LAX -->
+    <edge id='54334' source='3723' target='13'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Europe - FRA -->
+    <edge id='57870' source='3735' target='52'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Germany - FRA -->
+    <edge id='54373' source='3560' target='52'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Europe - LHR -->
+    <edge id='57867' source='3735' target='49'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- UK - LHR -->
+    <edge id='54370' source='3721' target='49'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Europe - AMS -->
+    <edge id='57888' source='3735' target='70'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Netherlands - AMS -->
+    <edge id='54391' source='3648' target='70'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- South America - GRU -->
+    <edge id='57950' source='3738' target='132'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Brazil - GRU -->
+    <edge id='54453' source='3526' target='132'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- South America - SSA -->
+    <edge id='58407' source='3738' target='589'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Brazil - SSA -->
+    <edge id='54910' source='3526' target='589'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- South America - REC -->
+    <edge id='58406' source='3738' target='588'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Brazil - REC -->
+    <edge id='54909' source='3526' target='588'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- REC -> MIA   -->
+    <edge id='36618' source='588' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3840</data>
+    </edge>
+
+    <!-- MIA -> SEA   -->
+    <edge id='4268' source='16' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2720</data>
+    </edge>
+
+    <!-- GRU -> FRA   -->
+    <edge id='18962' source='132' target='52'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6083</data>
+    </edge>
+
+    <!-- GRU -> LHR   -->
+    <edge id='18960' source='132' target='49'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5874</data>
+    </edge>
+
+    <!-- FRA -> SEA   -->
+    <edge id='9856' source='52' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5090</data>
+    </edge>
+
+
+    <!-- LHR -> SEA   -->
+    <edge id='9111' source='49' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4783</data>
+    </edge>
+
+    <!-- SSA -> FRA   -->
+    <edge id='36644' source='589' target='52'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5186</data>
+    </edge>
+
+    <!-- SSA -> MIA   -->
+    <edge id='36643' source='589' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3885</data>
+    </edge>
+
+    <!-- GRU -> MIA   -->
+    <edge id='18954' source='132' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4082</data>
+    </edge>
+
+    <!-- GRU -> AMS   -->
+    <edge id='18965' source='132' target='70'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6070</data>
+    </edge>
+
+    <!-- GRU -> REC   -->
+    <edge id='19000' source='132' target='588'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1304</data>
+    </edge>
+
+    <!-- REC -> FRA   -->
+    <edge id='36619' source='588' target='52'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4786</data>
+    </edge>
+
+    <!-- GRU -> LAX   -->
+    <edge id='18952' source='132' target='13'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6159</data>
+    </edge>
+
+    <!-- AMS -> SEA   -->
+    <edge id='12469' source='70' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4868</data>
+    </edge>
+
+    <!-- AMS -> LAX   -->
+    <edge id='12464' source='70' target='13'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5561</data>
+    </edge>
+
+    <!-- AMS -> FRA   -->
+    <edge id='12482' source='70' target='52'>
+      <data key='labelE'>route</data>
+      <data key='dist'>227</data>
+    </edge>
+
+    <!-- LAX -> SEA   -->
+    <edge id='4173' source='13' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>954</data>
+    </edge>
+
+    <!-- LAX -> FRA   -->
+    <edge id='6447' source='13' target='52'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5788</data>
+    </edge>
+
+    <!-- LAX -> AMS   -->
+    <edge id='6461' source='13' target='70'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5561</data>
+    </edge>
+
+    <!-- Asia - SIN  -->
+    <edge id='57874' source='3739' target='56'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Singapore - SIN  -->
+    <edge id='54377' source='3691' target='56'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- SIN -> AMS   -->
+    <edge id='10543' source='56' target='70'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6528</data>
+    </edge>
+
+    <!-- AMS -> SIN -->
+    <edge id='12485' source='70' target='56'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6528</data>
+    </edge>
+
+    <!-- SIN -> LHR   -->
+    <edge id='10525' source='56' target='49'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6758</data>
+    </edge>
+
+    <!-- SIN -> LAX   -->
+    <edge id='10520' source='56' target='13'>
+      <data key='labelE'>route</data>
+      <data key='dist'>8756</data>
+    </edge>
+
+    <!-- LAX -> SIN   -->
+    <edge id='6451' source='13' target='56'>
+      <data key='labelE'>route</data>
+      <data key='dist'>8756</data>
+    </edge>
+
+    <!-- SIN -> FRA   -->
+    <edge id='10528' source='56' target='52'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6384</data>
+    </edge>
+
+    <!-- SIN -> SEA   -->
+    <edge id='10521' source='56' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>8059</data>
+    </edge>
+
+    <!-- SSA -> SEA -->
+    <edge id='36645' source='589' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4180</data>
+    </edge>
+
+    <!-- REC -> SEA -->
+    <edge id='36620' source='588' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3840</data>
+    </edge>
+
+    <!-- GRU -> SEA -->
+    <edge id='18956' source='132' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6700</data>
+    </edge>
+  </graph>
+</graphml>

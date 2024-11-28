@@ -72,9 +72,12 @@ public class Main {
             "WHERE t1.src.labelV = 'airport' AND t2.src.labelV = 'airport' AND t2.dst.labelV = 'airport' " +
             "AND t1.src.lat < 0 AND t1.src.lon < 0 " +
             "AND t2.dst.code = 'SEA'" +
-            "AND t1.src.code != 'SEA' "
+            "AND t1.src.code != 'SEA' " +
+            "AND t2.src.code != t2.dst.code " +
+            "AND t1.src.code != t2.src.code"
         );
 
+        queryResult.show();
         JavaRDD<String> formattedRDD = queryResult.javaRDD().map(row -> {
             String origin = row.getString(0);
             String stop = row.isNullAt(1) ? null : row.getString(1);
@@ -99,7 +102,6 @@ public class Main {
             "GROUP BY t1.src.desc, t2.src.code, t2.src.desc " +
             "ORDER BY t1.src.desc, t2.src.code"
         );
-
         JavaRDD<String> formattedRDD = queryResult.javaRDD().map(row -> {
             String continent = row.getString(0);
             String country = row.getString(1);

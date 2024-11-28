@@ -1,23 +1,42 @@
-graph.traversal().V().hasLabel('airport').has('lat', lt(0)).has('lon', lt(0))
+graph.V()
+    .hasLabel('airport').has('lat', lt(0)).has('lon', lt(0))
     .union(
-        __.as('src').outE('route').inV().hasLabel('airport').has('code', 'SEA')
+        __.as('src')
+            .outE('route')
+            .inV()
+            .hasLabel('airport')
+            .has('code', 'SEA')
             .where(neq('src'))
+            .where(values('code').is(neq(select('src').values('code'))))
             .project('origin', 'destination')
             .by(select('src').values('code'))
             .by(values('code')),
-
-        __.as('src').outE('route').inV().hasLabel('airport').as('stop').outE('route').inV().hasLabel('airport').has('code', 'SEA')
+        __.as('src')
+            .outE('route')
+            .inV()
+            .hasLabel('airport')
+            .as('stop')
             .where(neq('src'))
+            .where(values('code').is(neq(select('src').values('code'))))
+            .outE('route')
+            .inV()
+            .hasLabel('airport')
+            .has('code', 'SEA')
+            .where(neq('src'))
+            .where(neq('stop'))
+            .where(values('code').is(neq(select('stop').values('code'))))
             .project('origin', 'stop', 'destination')
             .by(select('src').values('code'))
             .by(select('stop').values('code'))
             .by(values('code'))
     )
     .map {
-        def path = it.get()
-        path.containsKey('stop') ? path.origin + " -> " + path.stop + " -> " + path.destination : path.origin + " -> " + path.destination
+        def path = it.get();
+        path.containsKey('stop')
+            ? path.origin + " -> " + path.stop + " -> " + path.destination
+            : path.origin + " -> " + path.destination
     }
 
-graph.traversal().V().hasLabel('airport').has('lat', lt(0)).has('lon', lt(0)).union(__.as('src').outE('route').inV().hasLabel('airport').has('code', 'SEA').where(neq('src')).project('origin', 'destination').by(select('src').values('code')).by(values('code')), __.as('src').outE('route').inV().hasLabel('airport').as('stop').outE('route').inV().hasLabel('airport').has('code', 'SEA').where(neq('src')).project('origin', 'stop', 'destination').by(select('src').values('code')).by(select('stop').values('code')).by(values('code'))).map { def path = it.get(); path.containsKey('stop') ? path.origin + " -> " + path.stop + " -> " + path.destination : path.origin + " -> " + path.destination }
 
+graph.traversal().V().hasLabel('airport').has('lat', lt(0)).has('lon', lt(0)).union(__.as('src').outE('route').inV().hasLabel('airport').has('code', 'SEA').where(neq('src')).where(values('code').is(neq(select('src').values('code')))).project('origin', 'destination').by(select('src').values('code')).by(values('code')), __.as('src').outE('route').inV().hasLabel('airport').as('stop').where(neq('src')).where(values('code').is(neq(select('src').values('code')))).outE('route').inV().hasLabel('airport').has('code', 'SEA').where(neq('src')).where(neq('stop')).where(values('code').is(neq(select('stop').values('code')))).project('origin', 'stop', 'destination').by(select('src').values('code')).by(select('stop').values('code')).by(values('code'))).map { def path = it.get(); path.containsKey('stop') ? path.origin + " -> " + path.stop + " -> " + path.destination : path.origin + " -> " + path.destination }
 

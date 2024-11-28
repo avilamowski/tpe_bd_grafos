@@ -1,0 +1,564 @@
+<graphml xmlns='http://graphml.graphdrawing.org/xmlns'>
+  <key id='type' for='node' attr.name='type' attr.type='string'></key>
+  <key id='code' for='node' attr.name='code' attr.type='string'></key>
+  <key id='icao' for='node' attr.name='icao' attr.type='string'></key>
+  <key id='desc' for='node' attr.name='desc' attr.type='string'></key>
+  <key id='region' for='node' attr.name='region' attr.type='string'></key>
+  <key id='runways' for='node' attr.name='runways' attr.type='int'></key>
+  <key id='longest' for='node' attr.name='longest' attr.type='int'></key>
+  <key id='elev' for='node' attr.name='elev' attr.type='int'></key>
+  <key id='country' for='node' attr.name='country' attr.type='string'></key>
+  <key id='city' for='node' attr.name='city' attr.type='string'></key>
+  <key id='lat' for='node' attr.name='lat' attr.type='double'></key>
+  <key id='lon' for='node' attr.name='lon' attr.type='double'></key>
+  <key id='author' for='node' attr.name='author' attr.type='string'></key>
+  <key id='date' for='node' attr.name='date' attr.type='string'></key>
+  <key id='dist' for='edge' attr.name='dist' attr.type='int'></key>
+  <key id='labelV' for='node' attr.name='labelV' attr.type='string'></key>
+  <key id='labelE' for='edge' attr.name='labelE' attr.type='string'></key>
+
+  <graph id='routes' edgedefault='directed'>
+
+    <node id='3737'>
+      <data key='type'>continent</data>
+      <data key='code'>NA</data>
+      <data key='desc'>North America</data>
+      <data key='labelV'>continent</data>
+    </node>
+
+    <node id='3723'>
+      <data key='type'>country</data>
+      <data key='code'>US</data>
+      <data key='desc'>United States</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='22'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>SEA</data>
+      <data key='icao'>KSEA</data>
+      <data key='city'>Seattle</data>
+      <data key='desc'>Seattle-Tacoma</data>
+      <data key='region'>US-WA</data>
+      <data key='runways'>3</data>
+      <data key='longest'>11901</data>
+      <data key='elev'>432</data>
+      <data key='country'>US</data>
+      <data key='lat'>47.4490013122559</data>
+      <data key='lon'>-122.30899810791</data>
+    </node>
+
+
+    <node id='13'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>LAX</data>
+      <data key='icao'>KLAX</data>
+      <data key='city'>Los Angeles</data>
+      <data key='desc'>Los Angeles International Airport</data>
+      <data key='region'>US-CA</data>
+      <data key='runways'>4</data>
+      <data key='longest'>12091</data>
+      <data key='elev'>127</data>
+      <data key='country'>US</data>
+      <data key='lat'>33.94250107</data>
+      <data key='lon'>-118.4079971</data>
+    </node>
+
+    <node id='23'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>SFO</data>
+      <data key='icao'>KSFO</data>
+      <data key='city'>San Francisco</data>
+      <data key='desc'>San Francisco International Airport</data>
+      <data key='region'>US-CA</data>
+      <data key='runways'>4</data>
+      <data key='longest'>11870</data>
+      <data key='elev'>13</data>
+      <data key='country'>US</data>
+      <data key='lat'>37.6189994812012</data>
+      <data key='lon'>-122.375</data>
+    </node>
+
+
+    <node id='16'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>MIA</data>
+      <data key='icao'>KMIA</data>
+      <data key='city'>Miami</data>
+      <data key='desc'>Miami International Airport</data>
+      <data key='region'>US-FL</data>
+      <data key='runways'>4</data>
+      <data key='longest'>13016</data>
+      <data key='elev'>8</data>
+      <data key='country'>US</data>
+      <data key='lat'>25.7931995391846</data>
+      <data key='lon'>-80.2906036376953</data>
+    </node>
+
+    <node id='1'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>ATL</data>
+      <data key='icao'>KATL</data>
+      <data key='city'>Atlanta</data>
+      <data key='desc'>Hartsfield - Jackson Atlanta International Airport</data>
+      <data key='region'>US-GA</data>
+      <data key='runways'>5</data>
+      <data key='longest'>12390</data>
+      <data key='elev'>1026</data>
+      <data key='country'>US</data>
+      <data key='lat'>33.6366996765137</data>
+      <data key='lon'>-84.4281005859375</data>
+    </node>
+
+    <node id='12'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>JFK</data>
+      <data key='icao'>KJFK</data>
+      <data key='city'>New York</data>
+      <data key='desc'>New York John F. Kennedy International Airport</data>
+      <data key='region'>US-NY</data>
+      <data key='runways'>4</data>
+      <data key='longest'>14511</data>
+      <data key='elev'>12</data>
+      <data key='country'>US</data>
+      <data key='lat'>40.63980103</data>
+      <data key='lon'>-73.77890015</data>
+    </node>
+
+    <node id='17'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>MSP</data>
+      <data key='icao'>KMSP</data>
+      <data key='city'>Minneapolis</data>
+      <data key='desc'>Minneapolis-St.Paul International Airport</data>
+      <data key='region'>US-MN</data>
+      <data key='runways'>4</data>
+      <data key='longest'>11006</data>
+      <data key='elev'>841</data>
+      <data key='country'>US</data>
+      <data key='lat'>44.8819999695</data>
+      <data key='lon'>-93.2218017578</data>
+    </node>
+
+    <node id='18'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>ORD</data>
+      <data key='icao'>KORD</data>
+      <data key='city'>Chicago</data>
+      <data key='desc'>Chicago O'Hare International Airport</data>
+      <data key='region'>US-IL</data>
+      <data key='runways'>7</data>
+      <data key='longest'>13000</data>
+      <data key='elev'>672</data>
+      <data key='country'>US</data>
+      <data key='lat'>41.97859955</data>
+      <data key='lon'>-87.90480042</data>
+    </node>
+
+
+    <node id='3740'>
+      <data key='type'>continent</data>
+      <data key='code'>OC</data>
+      <data key='desc'>Oceania</data>
+      <data key='labelV'>continent</data>
+    </node>
+    <node id='3510'>
+      <data key='type'>country</data>
+      <data key='code'>AU</data>
+      <data key='desc'>Australia</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='55'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>SYD</data>
+      <data key='icao'>YSSY</data>
+      <data key='city'>Sydney</data>
+      <data key='desc'>Sydney Kingsford Smith</data>
+      <data key='region'>AU-NSW</data>
+      <data key='runways'>3</data>
+      <data key='longest'>12999</data>
+      <data key='elev'>21</data>
+      <data key='country'>AU</data>
+      <data key='lat'>-33.9460983276367</data>
+      <data key='lon'>151.177001953125</data>
+    </node>
+
+    <node id='3738'>
+      <data key='type'>continent</data>
+      <data key='code'>SA</data>
+      <data key='desc'>South America</data>
+      <data key='labelV'>continent</data>
+    </node>
+    <node id='3506'>
+      <data key='type'>country</data>
+      <data key='code'>AR</data>
+      <data key='desc'>Argentina</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='133'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>EZE</data>
+      <data key='icao'>SAEZ</data>
+      <data key='city'>Buenos Aires</data>
+      <data key='desc'>Buenos Aires, Ministro Pistarini International Airport</data>
+      <data key='region'>AR-B</data>
+      <data key='runways'>2</data>
+      <data key='longest'>10187</data>
+      <data key='elev'>67</data>
+      <data key='country'>AR</data>
+      <data key='lat'>-34.8222</data>
+      <data key='lon'>-58.5358</data>
+    </node>
+
+    <node id='3663'>
+      <data key='type'>country</data>
+      <data key='code'>PE</data>
+      <data key='desc'>Peru</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='134'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>LIM</data>
+      <data key='icao'>SPIM</data>
+      <data key='city'>Lima</data>
+      <data key='desc'>Lima, Jorge Chavez International Airport</data>
+      <data key='region'>PE-LIM</data>
+      <data key='runways'>1</data>
+      <data key='longest'>11506</data>
+      <data key='elev'>113</data>
+      <data key='country'>PE</data>
+      <data key='lat'>-12.021900177</data>
+      <data key='lon'>-77.1143035889</data>
+    </node>
+
+    <node id='3637'>
+      <data key='type'>country</data>
+      <data key='code'>MX</data>
+      <data key='desc'>Mexico</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='136'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>MEX</data>
+      <data key='icao'>MMMX</data>
+      <data key='city'>Mexico City</data>
+      <data key='desc'>Mexico City, Licenciado Benito Juarez International Airport</data>
+      <data key='region'>MX-DIF</data>
+      <data key='runways'>2</data>
+      <data key='longest'>12966</data>
+      <data key='elev'>7316</data>
+      <data key='country'>MX</data>
+      <data key='lat'>19.43630027771</data>
+      <data key='lon'>-99.0720977783203</data>
+    </node>
+
+
+    <!-- North America - SEA -->
+    <edge id='57840' source='3737' target='22'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - SEA -->
+    <edge id='54343' source='3723' target='22'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - LAX -->
+    <edge id='57831' source='3737' target='13'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - LAX -->
+    <edge id='54334' source='3723' target='13'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - SFO -->
+    <edge id='57841' source='3737' target='23'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - SFO -->
+    <edge id='54344' source='3723' target='23'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - MIA -->
+    <edge id='57834' source='3737' target='16'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - MIA -->
+    <edge id='54337' source='3723' target='16'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - ATL -->
+    <edge id='57819' source='3737' target='1'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - ATL -->
+    <edge id='54322' source='3723' target='1'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - JFK -->
+    <edge id='57830' source='3737' target='12'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - JFK -->
+    <edge id='54333' source='3723' target='12'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - MSP -->
+    <edge id='54338' source='3723' target='17'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - MSP -->
+    <edge id='57835' source='3737' target='17'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - ORD -->
+    <edge id='57836' source='3737' target='18'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- USA - ORD -->
+    <edge id='54339' source='3723' target='18'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Oceania - SYD -->
+    <edge id='57873' source='3740' target='55'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Australia - SYD -->
+    <edge id='54376' source='3510' target='55'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- South America - EZE -->
+    <edge id='57951' source='3738' target='133'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Argentina - EZE -->
+    <edge id='54454' source='3506' target='133'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- South America - LIM -->
+    <edge id='57952' source='3738' target='134'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Peru - LIM -->
+    <edge id='54455' source='3663' target='134'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- North America - MEX -->
+    <edge id='57954' source='3737' target='136'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Mexico - MEX -->
+    <edge id='54457' source='3637' target='136'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+
+    <!-- EZE -> LAX   -->
+    <edge id='19047' source='133' target='13'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6123</data>
+    </edge>
+
+    <!-- EZE -> MEX   -->
+    <edge id='19065' source='133' target='136'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4593</data>
+    </edge>
+
+    <!-- EZE -> ATL   -->
+    <edge id='19043' source='133' target='1'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5015</data>
+    </edge>
+
+    <!-- EZE -> MIA   -->
+    <edge id='19048' source='133' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4420</data>
+    </edge>
+
+    <!-- EZE -> JFK   -->
+    <edge id='19046' source='133' target='12'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5300</data>
+    </edge>
+
+    <!-- LIM -> LAX   -->
+    <edge id='19102' source='134' target='13'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4173</data>
+    </edge>
+
+    <!-- LIM -> MEX -->
+    <edge id='19117' source='134' target='136'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2636</data>
+    </edge>
+
+    <!-- LIM -> ATL   -->
+    <edge id='19096' source='134' target='1'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3189</data>
+    </edge>
+
+    <!-- LIM -> MIA   -->
+    <edge id='19104' source='134' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2620</data>
+    </edge>
+
+    <!-- LIM -> JFK   -->
+    <edge id='19101' source='134' target='12'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3642</data>
+    </edge>
+
+    <!-- JFK -> SEA   -->
+    <edge id='4134' source='12' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2410</data>
+    </edge>
+
+    <!-- LAX -> SEA   -->
+    <edge id='4173' source='13' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>954</data>
+    </edge>
+
+    <!-- MEX -> SEA   -->
+    <edge id='19239' source='136' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2333</data>
+    </edge>
+
+    <!-- ATL -> SEA   -->
+    <edge id='3761' source='1' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2180</data>
+    </edge>
+
+    <!-- MIA -> SEA -->
+    <edge id='4268' source='16' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2720</data>
+    </edge>
+
+    <!-- SYD -> LAX -->
+    <edge id='10420' source='55' target='13'>
+      <data key='labelE'>route</data>
+      <data key='dist'>7489</data>
+    </edge>
+
+    <!-- MSP -> SEA -->
+    <edge id='4304' source='17' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1390</data>
+    </edge>
+
+    <!-- ORD -> SEA -->
+    <edge id='4343' source='18' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1710</data>
+    </edge>
+
+
+    <!-- ATL -> EZE -->
+    <edge id='5151' source='1' target='133'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5015</data>
+    </edge>
+
+    <!-- JFK -> EZE -->
+    <edge id='6327' source='12' target='133'>
+      <data key='labelE'>route</data>
+      <data key='dist'>5300</data>
+    </edge>
+
+
+    <!-- MIA -> EZE -->
+    <edge id='6828' source='16' target='133'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4420</data>
+    </edge>
+
+    <!-- ATL -> LIM -->
+    <edge id='5152' source='1' target='134'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3189</data>
+    </edge>
+
+    <!--  MIA -> LIM -->
+    <edge id='6829' source='16' target='134'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2620</data>
+    </edge>
+
+    <!-- SFO -> SEA -->
+    <edge id='4514' source='23' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>678</data>
+    </edge>
+
+    <!-- SYD-> SFO -->
+    <edge id='10421' source='55' target='23'>
+      <data key='labelE'>route</data>
+      <data key='dist'>7420</data>
+    </edge>
+
+    <!-- JFK -> LIM -->
+    <edge id='6328' source='12' target='134'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3642</data>
+    </edge>
+
+    <!-- EZE -> SEA -->
+    <edge id='19045' source='133' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>6123</data>
+    </edge>
+
+    <!-- LIM -> SEA -->
+    <edge id='19103' source='134' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4173</data>
+    </edge>
+
+  </graph>
+</graphml>
