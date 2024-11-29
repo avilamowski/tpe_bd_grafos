@@ -1,7 +1,0 @@
-Para comparar los resultados obtenidos con GraphFrames y JanusGraph, se pueden utilizar diferentes criterios:
-
-Verificar si cada par de queries devuelve la misma cantidad de filas, utilizando la función count() en cada uno de los casos.
-
-En caso de que las consultas devuelvan el mismo formato, se puede realizar una comparación uno a uno entre los resultados utilizando un script o un comando (por ejemplo, diff). En el caso de consultas ejecutadas en JanusGraph, es necesario guardar los resultados en un archivo antes de proceder. Es importante considerar el formato de salida de cada consulta, ya que si los resultados no están en el mismo formato, se debe realizar un proceso de formateo adecuado antes de la comparación. Si los resultados están en el mismo formato, también se puede observar el peso de los archivos para verificar si hay diferencias significativas en el tamaño. Además, dado que los resultados pueden no estar ordenados de la misma manera, se deben ordenar previamente para garantizar una comparación precisa.
-
-Modificar o eliminar ciertas condiciones de las consultas y comparar si los resultados obtenidos siguen siendo los mismos. Por ejemplo, en el ejercicio b1, se podría cambiar el aeropuerto de destino 'SEA' por otro aeropuerto y comparar los resultados. También, se podría eliminar la condición que exige que los aeropuertos tengan latitud y longitud. En el ejercicio b2, se podría limitar la cantidad de continentes considerados para verificar si los resultados siguen siendo consistentes.
