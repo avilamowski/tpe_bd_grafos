@@ -526,5 +526,23 @@
       <data key='labelE'>route</data>
       <data key='dist'>6700</data>
     </edge>
+
+    <!-- GRU -> SSA -->
+    <edge id='19001' source='132' target='589'>
+      <data key='labelE'>route</data>
+      <data key='dist'>902</data>
+    </edge>
+
+    <!-- REC -> GRU -->
+    <edge id='36622' source='588' target='132'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1304</data>
+    </edge>
+
+    <!-- SSA -> GRU -->
+    <edge id='36647' source='589' target='132'>
+      <data key='labelE'>route</data>
+      <data key='dist'>902</data>
+    </edge>
   </graph>
 </graphml>

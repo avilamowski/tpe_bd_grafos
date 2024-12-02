@@ -66,23 +66,6 @@
       <data key='lon'>-118.4079971</data>
     </node>
 
-    <node id='23'>
-      <data key='labelV'>airport</data>
-      <data key='type'>airport</data>
-      <data key='code'>SFO</data>
-      <data key='icao'>KSFO</data>
-      <data key='city'>San Francisco</data>
-      <data key='desc'>San Francisco International Airport</data>
-      <data key='region'>US-CA</data>
-      <data key='runways'>4</data>
-      <data key='longest'>11870</data>
-      <data key='elev'>13</data>
-      <data key='country'>US</data>
-      <data key='lat'>37.6189994812012</data>
-      <data key='lon'>-122.375</data>
-    </node>
-
-
     <node id='16'>
       <data key='labelV'>airport</data>
       <data key='type'>airport</data>
@@ -130,39 +113,6 @@
       <data key='lat'>40.63980103</data>
       <data key='lon'>-73.77890015</data>
     </node>
-
-    <node id='17'>
-      <data key='labelV'>airport</data>
-      <data key='type'>airport</data>
-      <data key='code'>MSP</data>
-      <data key='icao'>KMSP</data>
-      <data key='city'>Minneapolis</data>
-      <data key='desc'>Minneapolis-St.Paul International Airport</data>
-      <data key='region'>US-MN</data>
-      <data key='runways'>4</data>
-      <data key='longest'>11006</data>
-      <data key='elev'>841</data>
-      <data key='country'>US</data>
-      <data key='lat'>44.8819999695</data>
-      <data key='lon'>-93.2218017578</data>
-    </node>
-
-    <node id='18'>
-      <data key='labelV'>airport</data>
-      <data key='type'>airport</data>
-      <data key='code'>ORD</data>
-      <data key='icao'>KORD</data>
-      <data key='city'>Chicago</data>
-      <data key='desc'>Chicago O'Hare International Airport</data>
-      <data key='region'>US-IL</data>
-      <data key='runways'>7</data>
-      <data key='longest'>13000</data>
-      <data key='elev'>672</data>
-      <data key='country'>US</data>
-      <data key='lat'>41.97859955</data>
-      <data key='lon'>-87.90480042</data>
-    </node>
-
 
     <node id='3740'>
       <data key='type'>continent</data>
@@ -268,6 +218,92 @@
       <data key='lon'>-99.0720977783203</data>
     </node>
 
+    <node id='3542'>
+      <data key='type'>country</data>
+      <data key='code'>CO</data>
+      <data key='desc'>Colombia</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='360'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>BOG</data>
+      <data key='icao'>SKBO</data>
+      <data key='city'>Bogota</data>
+      <data key='desc'>El Dorado International Airport</data>
+      <data key='region'>CO-CUN</data>
+      <data key='runways'>2</data>
+      <data key='longest'>12467</data>
+      <data key='elev'>8361</data>
+      <data key='country'>CO</data>
+      <data key='lat'>4.70159</data>
+      <data key='lon'>-74.1469</data>
+    </node>
+
+    <node id='591'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>BAQ</data>
+      <data key='icao'>SKBQ</data>
+      <data key='city'>Barranquilla</data>
+      <data key='desc'>Ernesto Cortissoz International Airport</data>
+      <data key='region'>CO-ATL</data>
+      <data key='runways'>1</data>
+      <data key='longest'>9842</data>
+      <data key='elev'>98</data>
+      <data key='country'>CO</data>
+      <data key='lat'>10.8896</data>
+      <data key='lon'>-74.7808</data>
+    </node>
+
+
+    <node id='3544'>
+      <data key='type'>country</data>
+      <data key='code'>CK</data>
+      <data key='desc'>Cook Islands</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='901'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>RAR</data>
+      <data key='icao'>NCRG</data>
+      <data key='city'>Avarua</data>
+      <data key='desc'>Rarotonga International Airport</data>
+      <data key='region'>CK-U-A</data>
+      <data key='runways'>1</data>
+      <data key='longest'>7638</data>
+      <data key='elev'>19</data>
+      <data key='country'>CK</data>
+      <data key='lat'>-21.2026996613</data>
+      <data key='lon'>-159.805999756</data>
+    </node>
+
+    <node id='3562'>
+      <data key='type'>country</data>
+      <data key='code'>EC</data>
+      <data key='desc'>Ecuador</data>
+      <data key='labelV'>country</data>
+    </node>
+
+    <node id='298'>
+      <data key='labelV'>airport</data>
+      <data key='type'>airport</data>
+      <data key='code'>GYE</data>
+      <data key='icao'>SEGU</data>
+      <data key='city'>Guayaquil</data>
+      <data key='desc'>Jose Joaquin de Olmedo International Airport</data>
+      <data key='region'>EC-G</data>
+      <data key='runways'>1</data>
+      <data key='longest'>9154</data>
+      <data key='elev'>19</data>
+      <data key='country'>EC</data>
+      <data key='lat'>-2.15741991997</data>
+      <data key='lon'>-79.8835983276</data>
+    </node>
+
 
     <!-- North America - SEA -->
     <edge id='57840' source='3737' target='22'>
@@ -286,16 +322,6 @@
 
     <!-- USA - LAX -->
     <edge id='54334' source='3723' target='13'>
-      <data key='labelE'>contains</data>
-    </edge>
-
-    <!-- North America - SFO -->
-    <edge id='57841' source='3737' target='23'>
-      <data key='labelE'>contains</data>
-    </edge>
-
-    <!-- USA - SFO -->
-    <edge id='54344' source='3723' target='23'>
       <data key='labelE'>contains</data>
     </edge>
 
@@ -326,26 +352,6 @@
 
     <!-- USA - JFK -->
     <edge id='54333' source='3723' target='12'>
-      <data key='labelE'>contains</data>
-    </edge>
-
-    <!-- North America - MSP -->
-    <edge id='54338' source='3723' target='17'>
-      <data key='labelE'>contains</data>
-    </edge>
-
-    <!-- USA - MSP -->
-    <edge id='57835' source='3737' target='17'>
-      <data key='labelE'>contains</data>
-    </edge>
-
-    <!-- North America - ORD -->
-    <edge id='57836' source='3737' target='18'>
-      <data key='labelE'>contains</data>
-    </edge>
-
-    <!-- USA - ORD -->
-    <edge id='54339' source='3723' target='18'>
       <data key='labelE'>contains</data>
     </edge>
 
@@ -486,32 +492,6 @@
       <data key='dist'>7489</data>
     </edge>
 
-    <!-- MSP -> SEA -->
-    <edge id='4304' source='17' target='22'>
-      <data key='labelE'>route</data>
-      <data key='dist'>1390</data>
-    </edge>
-
-    <!-- ORD -> SEA -->
-    <edge id='4343' source='18' target='22'>
-      <data key='labelE'>route</data>
-      <data key='dist'>1710</data>
-    </edge>
-
-
-    <!-- ATL -> EZE -->
-    <edge id='5151' source='1' target='133'>
-      <data key='labelE'>route</data>
-      <data key='dist'>5015</data>
-    </edge>
-
-    <!-- JFK -> EZE -->
-    <edge id='6327' source='12' target='133'>
-      <data key='labelE'>route</data>
-      <data key='dist'>5300</data>
-    </edge>
-
-
     <!-- MIA -> EZE -->
     <edge id='6828' source='16' target='133'>
       <data key='labelE'>route</data>
@@ -522,24 +502,6 @@
     <edge id='5152' source='1' target='134'>
       <data key='labelE'>route</data>
       <data key='dist'>3189</data>
-    </edge>
-
-    <!--  MIA -> LIM -->
-    <edge id='6829' source='16' target='134'>
-      <data key='labelE'>route</data>
-      <data key='dist'>2620</data>
-    </edge>
-
-    <!-- SFO -> SEA -->
-    <edge id='4514' source='23' target='22'>
-      <data key='labelE'>route</data>
-      <data key='dist'>678</data>
-    </edge>
-
-    <!-- SYD-> SFO -->
-    <edge id='10421' source='55' target='23'>
-      <data key='labelE'>route</data>
-      <data key='dist'>7420</data>
     </edge>
 
     <!-- JFK -> LIM -->
@@ -559,6 +521,131 @@
       <data key='labelE'>route</data>
       <data key='dist'>4173</data>
     </edge>
+
+    <!-- South America - BOG -->
+    <edge id='58178' source='3738' target='360'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Colombia - BOG -->
+    <edge id='54681' source='3542' target='360'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- South America - BAQ -->
+    <edge id='58409' source='3738' target='591'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Colombia - BAQ -->
+    <edge id='54912' source='3542' target='591'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- EZE -> BOG -->
+    <edge id='19072' source='133' target='360'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2912</data>
+    </edge>
+
+    <!-- LIM -> BOG -->
+    <edge id='19124' source='134' target='360'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1173</data>
+    </edge>
+
+    <!-- BAQ -> BOG -->
+    <edge id='36692' source='591' target='360'>
+      <data key='labelE'>route</data>
+      <data key='dist'>429</data>
+    </edge>
+
+    <!-- BOG -> MIA -->
+    <edge id='30707' source='360' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1512</data>
+    </edge>
+
+    <!-- BAQ -> MIA -->
+    <edge id='36691' source='591' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1090</data>
+    </edge>
+
+    <!-- BAQ -> SEA -->
+    <edge id='36693' source='591' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>3050</data>
+    </edge>
+
+    <!-- Oceania- RAR -->
+    <edge id='58719' source='3740' target='901'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Cook Islands - RAR -->
+    <edge id='55222' source='3544' target='901'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- RAR -> LAX -->
+    <edge id='42407' source='901' target='13'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4680</data>
+    </edge>
+
+    <!-- RAR -> SEA -->
+    <edge id='42408' source='901' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>4130</data>
+    </edge>
+
+    <!-- South America - GYE -->
+    <edge id='58116' source='3738' target='298'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- Ecuador - GYE -->
+    <edge id='54619' source='3562' target='298'>
+      <data key='labelE'>contains</data>
+    </edge>
+
+    <!-- GYE -> MIA -->
+    <edge id='27971' source='298' target='16'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1930</data>
+    </edge>
+
+    <!-- GYE -> JFK -->
+    <edge id='27972' source='298' target='12'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2600</data>
+    </edge>
+
+    <!-- GYE -> MEX -->
+    <edge id='27977' source='298' target='136'>
+      <data key='labelE'>route</data>
+      <data key='dist'>1979</data>
+    </edge>
+
+    <!-- GYE -> SEA -->
+    <edge id='27978' source='298' target='22'>
+      <data key='labelE'>route</data>
+      <data key='dist'>2820</data>
+    </edge>
+
+    <!-- LIM - GYE -->
+    <edge id='19122' source='134' target='298'>
+      <data key='labelE'>route</data>
+      <data key='dist'>707</data>
+    </edge>
+
+    <!-- GYE -> BOG -->
+    <edge id='27980' source='298' target='360'>
+      <data key='labelE'>route</data>
+      <data key='dist'>617</data>
+    </edge>
+
 
   </graph>
 </graphml>
